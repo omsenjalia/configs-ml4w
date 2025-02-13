@@ -1,0 +1,4 @@
+source .bashrc_custom
+git add .
+git commit -m "Update $DATE"
+git push
