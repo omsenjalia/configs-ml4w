@@ -1,0 +1,24 @@
+2025-02-06T04:52:13.366Z [SPECS]::Version: 0.5.142025-02-06T04:52:13.366Z [SPECS]::CPUs: [{"model":"AMD Ryzen 5 7235HS","speed":3190,"times":{"user":37680,"nice":70,"sys":20500,"idle":786720,"irq":2650}},{"model":"AMD Ryzen 5 7235HS","speed":2863,"times":{"user":57880,"nice":80,"sys":39000,"idle":737390,"irq":3910}},{"model":"AMD Ryzen 5 7235HS","speed":4241,"times":{"user":50920,"nice":70,"sys":31240,"idle":760200,"irq":3180}},{"model":"AMD Ryzen 5 7235HS","speed":4241,"times":{"user":63950,"nice":100,"sys":33540,"idle":751330,"irq":2260}},{"model":"AMD Ryzen 5 7235HS","speed":3476,"times":{"user":23720,"nice":40,"sys":19270,"idle":803270,"irq":2720}},{"model":"AMD Ryzen 5 7235HS","speed":2901,"times":{"user":15710,"nice":30,"sys":12410,"idle":815870,"irq":8000}},{"model":"AMD Ryzen 5 7235HS","speed":4237,"times":{"user":27640,"nice":50,"sys":19310,"idle":799370,"irq":2590}},{"model":"AMD Ryzen 5 7235HS","speed":4237,"times":{"user":23320,"nice":30,"sys":15060,"idle":809570,"irq":2770}}]
+2025-02-06T04:52:13.366Z [SPECS]::Machine: x86_64
+2025-02-06T04:52:13.367Z [SPECS]::Endianness: LE
+2025-02-06T04:52:13.367Z [SPECS]::Parallelism: 8
+2025-02-06T04:52:13.367Z [SPECS]::Free Mem: 20673798144
+2025-02-06T04:52:13.367Z [SPECS]::Total Mem: 24865820672
+2025-02-06T04:52:13.367Z [SPECS]::OS Version: #1 ZEN SMP PREEMPT_DYNAMIC Sat, 18 Jan 2025 02:26:52 +0000
+2025-02-06T04:52:13.367Z [SPECS]::OS Platform: linux
+2025-02-06T04:52:13.367Z [SPECS]::OS Release: 6.12.10-zen1-1-zen
+2025-02-06T04:52:13.367Z [CORTEX]:: Spawning cortex subprocess...
+2025-02-06T04:52:13.367Z [CORTEX]:: Spawn cortex at path: /home/om/.config/Jan/data/extensions/@janhq/inference-cortex-extension/dist/bin/cortex-server
+2025-02-06T04:52:13.367Z [CORTEX]:: Cortex engine path: /tmp/.mount_jan-lihqbd2L/resources/app.asar.unpacked/shared
+2025-02-06T04:52:13.368Z [APP]::Starting process: /home/om/.config/Jan/data/extensions/@janhq/inference-cortex-extension/dist/bin/cortex-server --start-server --port 39291 --config_file_path /home/om/.config/Jan/data/.janrc --data_folder_path /home/om/.config/Jan/data
+2025-02-06T04:52:13.380Z [SPECS]::0, 6144, NVIDIA GeForce RTX 3050 6GB Laptop GPU
+
+2025-02-06T04:52:13.382Z [APP]::{"notify":true,"run_mode":"gpu","nvidia_driver":{"exist":true,"version":"565.77"},"cuda":{"exist":true,"version":"12"},"gpus":[{"id":"0","vram":"6144","name":"NVIDIA GeForce RTX 3050 6GB Laptop GPU","arch":"ampere"}],"gpu_highest_vram":"0","gpus_in_use":["0"],"is_initial":false,"vulkan":false}
+2025-02-06T04:52:13.988Z [CORTEX]: CPU instruction: avx2
+2025-02-06T04:52:13.988Z [CORTEX]: Engine variant: linux-amd64-avx2
+2025-02-06T04:52:14.099Z [CORTEX]: CPU instruction: avx2
+2025-02-06T04:52:14.099Z [CORTEX]: Engine variant: linux-amd64-avx2-cuda-12-0
+2025-02-06T04:52:14.652Z [APP]::Process output: 20250206 04:52:13.389006 UTC 8644 INFO  Config file not found. Creating one at /home/om/.config/Jan/data/.janrc - file_manager_utils.cc:201
+20250206 04:52:13.389065 UTC 8644 INFO  Default data folder path: /home/om/.config/Jan/data - file_manager_utils.cc:203
+Host: 127.0.0.1 Port: 39291
+

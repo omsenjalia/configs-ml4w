@@ -1,0 +1,35 @@
+[General]
+Close After Last=true
+Days Meta Infos=30
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+Show Url Nav Bar=true
+
+[KTextEditor Renderer]
+Animate Bracket Matching=true
+Auto Color Theme Selection=true
+Font=FiraCode Nerd Font Mono,11,-1,5,50,0,0,0,0,0
+
+[KTextEditor View]
+Smart Copy Cut=true
+Text Drag And Drop=true
+Word Completion=true
+Word Completion Minimal Word Length=3
+Word Completion Remove Tail=true
+
+[Konsole]
+AutoSyncronize=true
+
+[filetree]
+editShade=31,81,106
+listMode=false
+middleClickToClose=false
+shadingEnabled=true
+showCloseButton=false
+showFullPathOnRoots=false
+showToolbar=true
+sortRole=0
+viewShade=81,49,95

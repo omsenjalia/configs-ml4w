@@ -1,0 +1,5 @@
+2025/02/06-10:22:05.973 2136 Creating DB /home/om/.config/Jan/Local Storage/leveldb since it was missing.
+2025/02/06-10:22:06.016 2136 Reusing MANIFEST /home/om/.config/Jan/Local Storage/leveldb/MANIFEST-000001
+2025/02/06-10:23:06.719 2137 Level-0 table #5: started
+2025/02/06-10:23:06.747 2137 Level-0 table #5: 23533 bytes OK
+2025/02/06-10:23:06.750 2137 Delete type=0 #3

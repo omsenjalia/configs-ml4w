@@ -1,0 +1,343 @@
+20250206 04:52:13.493396 UTC 8644 INFO  Host: 127.0.0.1 Port: 39291
+ - main.cc:108
+20250206 04:52:13.493507 UTC 8644 INFO  cortex.cpp version: v1.0.8 - main.cc:117
+20250206 04:52:13.603840 UTC 8644 INFO  Gpu Driver Version: 565.77 - system_info_utils.cc:20
+20250206 04:52:13.604093 UTC 8644 INFO  CUDA Version: 12.7 - system_info_utils.cc:31
+20250206 04:52:13.639101 UTC 8644 INFO  Activated GPUs before:  - hardware_service.cc:284
+20250206 04:52:13.644175 UTC 8644 INFO  Inserted: {"activated":true,"hardware_id":0,"priority":2147483647,"software_id":0,"type":"gpu","uuid":"GPU-fb64e9bd-d2b0-48b8-6b49-97f115209aea"} - hardware.cc:57
+20250206 04:52:13.644344 UTC 8644 INFO  Activated GPUs after: 0  - hardware_service.cc:309
+20250206 04:52:13.644356 UTC 8644 INFO  Need restart - hardware_service.cc:340
+20250206 04:52:13.644367 UTC 8644 INFO  Restart to update hardware configuration - main.cc:125
+20250206 04:52:13.644376 UTC 8644 INFO  CUDA_VISIBLE_DEVICES is set to: 0 - hardware_service.cc:104
+20250206 04:52:13.644667 UTC 8644 INFO  LD_LIBRARY_PATH: /tmp/.mount_jan-lihqbd2L/usr/lib::/tmp/.mount_jan-lihqbd2L/resources/app.asar.unpacked/shared - hardware_service.cc:171
+20250206 04:52:13.644840 UTC 8644 INFO  LD_LIBRARY_PATH: /tmp/.mount_jan-lihqbd2L/resources/app.asar.unpacked/shared/engines/cortex.tensorrt-llm/deps:/tmp/.mount_jan-lihqbd2L/resources/app.asar.unpacked/shared/engines/cortex.llamacpp/deps:/tmp/.mount_jan-lihqbd2L/usr/lib::/tmp/.mount_jan-lihqbd2L/resources/app.asar.unpacked/shared - hardware_service.cc:177
+20250206 04:52:13.646821 UTC 8644 WARN  Server is not alive: CURL request failed: Could not connect to server - server_start_cmd.h:19
+20250206 04:52:13.660424 UTC 8656 INFO  Host: 127.0.0.1 Port: 39291
+ - main.cc:108
+20250206 04:52:13.660493 UTC 8656 INFO  cortex.cpp version: v1.0.8 - main.cc:117
+20250206 04:52:13.759682 UTC 8656 INFO  Gpu Driver Version: 565.77 - system_info_utils.cc:20
+20250206 04:52:13.760013 UTC 8656 INFO  CUDA Version: 12.7 - system_info_utils.cc:31
+20250206 04:52:13.782991 UTC 8656 INFO  Activated GPUs before: 0  - hardware_service.cc:284
+20250206 04:52:13.783139 UTC 8656 WARN  UNIQUE constraint failed: hardware.uuid - hardware.cc:60
+20250206 04:52:13.783153 UTC 8656 WARN  UNIQUE constraint failed: hardware.uuid - hardware_service.cc:295
+20250206 04:52:13.783216 UTC 8656 INFO  Activated GPUs after: 0  - hardware_service.cc:309
+20250206 04:52:13.784747 UTC 8656 INFO  Constructing FileFsRepository.. - file_fs_repository.h:33
+20250206 04:52:13.784795 UTC 8656 INFO  Constructing MessageFsRepository.. - message_fs_repository.h:37
+20250206 04:52:13.784821 UTC 8656 INFO  Constructing ThreadFsRepository.. - thread_fs_repository.h:54
+20250206 04:52:13.786364 UTC 8656 INFO  Starting worker thread: 0 - download_service.cc:302
+20250206 04:52:13.786423 UTC 8656 INFO  Starting worker thread: 1 - download_service.cc:302
+20250206 04:52:13.786471 UTC 8656 INFO  Starting worker thread: 2 - download_service.cc:302
+20250206 04:52:13.786511 UTC 8656 INFO  Starting worker thread: 3 - download_service.cc:302
+20250206 04:52:13.852885 UTC 8656 INFO  Gpu Driver Version: 565.77 - system_info_utils.cc:20
+20250206 04:52:13.853169 UTC 8656 INFO  CUDA Version: 12.7 - system_info_utils.cc:31
+20250206 04:52:13.853286 UTC 8656 INFO  FileWatcherService created: /home/om/.config/Jan/data/models - file_watcher_service.h:45
+20250206 04:52:13.857278 UTC 8656 INFO  Server started, listening at: 127.0.0.1:39291 - main.cc:197
+20250206 04:52:13.857295 UTC 8656 INFO  Please load your model - main.cc:199
+20250206 04:52:13.857305 UTC 8656 INFO  Number of thread is:8 - main.cc:208
+20250206 04:52:13.857409 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/00/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857468 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/01/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857521 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/02/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857573 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/03/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857635 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/04/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857689 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/05/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857743 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/06/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857795 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/07/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857847 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/08/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857900 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/09/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.857952 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858009 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858065 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858118 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858180 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858244 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/0F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858317 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/10/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858396 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/11/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858462 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/12/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858535 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/13/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858605 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/14/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858670 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/15/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858733 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/16/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858786 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/17/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858838 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/18/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858890 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/19/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.858951 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859037 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859101 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859163 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859224 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859286 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/1F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859348 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/20/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859411 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/21/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859472 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/22/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859545 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/23/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859608 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/24/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859678 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/25/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859742 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/26/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859804 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/27/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859866 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/28/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.859927 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/29/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860010 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860076 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860183 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860250 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860308 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860362 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/2F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860415 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/30/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860473 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/31/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860533 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/32/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860598 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/33/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860655 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/34/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860709 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/35/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860767 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/36/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860820 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/37/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860873 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/38/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860927 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/39/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.860987 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861042 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861097 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861150 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861206 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861262 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/3F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861316 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/40/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861430 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/41/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861493 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/42/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861558 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/43/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861632 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/44/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861722 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/45/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.861888 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/46/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862000 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/47/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862100 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/48/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862177 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/49/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862247 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862353 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862447 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862527 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862590 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862644 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/4F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862725 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/50/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862798 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/51/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862861 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/52/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862917 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/53/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.862987 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/54/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863047 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/55/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863122 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/56/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863190 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/57/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863248 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/58/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863302 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/59/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863396 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863456 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863512 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863566 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863620 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863674 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/5F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863729 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/60/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863784 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/61/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863839 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/62/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863893 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/63/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.863947 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/64/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864007 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/65/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864062 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/66/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864128 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/67/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864191 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/68/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864282 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/69/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864381 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864517 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864581 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864633 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864686 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864738 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/6F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864791 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/70/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864874 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/71/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864930 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/72/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.864995 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/73/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865049 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/74/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865102 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/75/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865153 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/76/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865207 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/77/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865259 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/78/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865326 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/79/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865378 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865430 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865483 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865535 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865586 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865710 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/7F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865766 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/80/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865818 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/81/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865917 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/82/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.865994 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/83/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866070 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/84/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866185 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/85/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866295 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/86/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866398 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/87/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866532 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/88/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866639 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/89/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866717 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866791 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866859 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.866925 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867063 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867148 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/8F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867216 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/90/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867283 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/91/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867343 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/92/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867396 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/93/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867447 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/94/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867501 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/95/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867553 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/96/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867604 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/97/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867656 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/98/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867708 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/99/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867760 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9A/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867812 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9B/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867869 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9C/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867921 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9D/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.867980 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9E/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868033 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/9F/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868086 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868138 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868189 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868241 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868292 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868344 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868396 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868447 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868498 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868557 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/A9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868610 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868662 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868714 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868766 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AD/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868817 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868872 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/AF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868924 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.868983 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869038 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869089 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869141 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869194 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869276 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869351 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869414 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869479 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/B9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869541 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869603 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869666 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869728 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BD/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869789 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869851 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/BF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869913 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.869992 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870059 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870122 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870184 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870247 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870312 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870380 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870442 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870504 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/C9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870573 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870637 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870699 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870771 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CD/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870834 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870896 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/CF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.870952 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871017 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871069 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871121 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871173 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871263 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871332 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871395 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871457 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871520 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/D9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871591 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871655 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871729 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871795 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DD/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871857 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871920 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/DF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.871990 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872054 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872114 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872166 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872219 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872271 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872323 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872374 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872458 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872534 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/E9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872617 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/EA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872767 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/EB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872854 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/EC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.872934 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/ED/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873019 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/EE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873103 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/EF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873181 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F0/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873248 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F1/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873323 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F2/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873377 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F3/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873429 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F4/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873487 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F5/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873542 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F6/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873595 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F7/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873647 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F8/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873699 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/F9/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873752 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FA/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873805 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FB/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873857 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FC/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873919 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FD/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.873997 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FE/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.874053 UTC 8656 ERROR Error 30 creating path ./uploads/tmp/FF/: Read-only file system - Utilities.cc:1133
+20250206 04:52:13.889790 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:13.993249 UTC 8681 INFO  IsEngineVariantReady: cortex.llamacpp, 0.1.49, linux-amd64-avx2 - engine_service.cc:566
+20250206 04:52:13.993277 UTC 8681 INFO  Installed: name: linux-amd64-avx, version: v0.1.49 - engine_service.cc:569
+20250206 04:52:13.998151 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.005270 UTC 8685 INFO  Origin: file:// - main.cc:227
+20250206 04:52:14.103277 UTC 8681 INFO  IsEngineVariantReady: cortex.llamacpp, 0.1.49, linux-amd64-avx2-cuda-12-0 - engine_service.cc:566
+20250206 04:52:14.103305 UTC 8681 INFO  Installed: name: linux-amd64-avx, version: v0.1.49 - engine_service.cc:569
+20250206 04:52:14.107219 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.266116 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.274994 UTC 8681 INFO  ListThreads - threads.cc:12
+20250206 04:52:14.275027 UTC 8681 INFO  ListThreads - thread_service.cc:37
+20250206 04:52:14.276730 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.288792 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.298484 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.307022 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.311896 UTC 8681 INFO  Force indexing model list - model_service.cc:137
+20250206 04:52:14.314394 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:52:14.650271 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:52:50.857190 UTC 8681 INFO  Origin:  - main.cc:227
+20250206 04:54:40.433640 UTC 8682 INFO  CreateThread: 01JKCSRD1HJ37SHJCZ17XW6C59 - thread_fs_repository.cc:120
+20250206 04:54:40.434000 UTC 8682 INFO  InitializeMessages for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_service.cc:126
+20250206 04:54:40.434014 UTC 8682 INFO  Prepopulated with empty messages - message_service.cc:133
+20250206 04:54:40.434020 UTC 8682 INFO  Initializing messages for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_fs_repository.cc:257
+20250206 04:54:40.435602 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:40.440688 UTC 8682 INFO  CreateAssistant: 01JKCSRD1HJ37SHJCZ17XW6C59 - assistant_service.cc:7
+20250206 04:54:40.442744 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:40.447489 UTC 8682 INFO  RetrieveAssistant: 01JKCSRD1HJ37SHJCZ17XW6C59 - assistants.cc:9
+20250206 04:54:40.447517 UTC 8682 INFO  RetrieveAssistant: 01JKCSRD1HJ37SHJCZ17XW6C59 - assistant_service.cc:19
+20250206 04:54:40.449227 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:40.521728 UTC 8682 INFO  ListMessages for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_service.cc:58
+20250206 04:54:40.521757 UTC 8682 INFO  Listing messages for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_fs_repository.cc:50
+20250206 04:54:40.523436 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:43.867712 UTC 8682 INFO  CreateMessage for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_fs_repository.cc:15
+20250206 04:54:43.869433 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:48.218693 UTC 8682 INFO  RetrieveThread: 01JKCSRD1HJ37SHJCZ17XW6C59 - thread_service.cc:43
+20250206 04:54:48.219200 UTC 8682 INFO  RetrieveThread: 01JKCSRD1HJ37SHJCZ17XW6C59 - thread_service.cc:43
+20250206 04:54:48.221091 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:48.235939 UTC 8682 INFO  CreateMessage for thread 01JKCSRD1HJ37SHJCZ17XW6C59 - message_fs_repository.cc:15
+20250206 04:54:48.237810 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 04:54:48.242685 UTC 8682 INFO  RetrieveThread: 01JKCSRD1HJ37SHJCZ17XW6C59 - thread_service.cc:43
+20250206 04:54:48.243202 UTC 8682 INFO  RetrieveThread: 01JKCSRD1HJ37SHJCZ17XW6C59 - thread_service.cc:43
+20250206 04:54:48.245026 UTC 8682 INFO  Origin:  - main.cc:227
+20250206 05:00:08.259307 UTC 8683 INFO  Origin:  - main.cc:227
+20250206 05:00:08.261182 UTC 8683 INFO  Program is exitting, goodbye! - process_manager.cc:17
+20250206 05:00:08.264681 UTC 8656 INFO  FileWatcherService destructor - file_watcher_service.h:49
+20250206 05:00:08.264729 UTC 8656 INFO  before close fd! - file_watcher_service.h:79
+20250206 05:00:08.264736 UTC 8656 INFO  before join! - file_watcher_service.h:84
+20250206 05:00:08.328044 UTC 8679 ERROR Poll error on fd - file_watcher_service.h:323
+20250206 05:00:08.328177 UTC 8656 INFO  Cleanup Watches - file_watcher_service.h:270
+20250206 05:00:08.328193 UTC 8656 INFO  FileWatcherService stopped! - file_watcher_service.h:104
+20250206 05:00:08.436096 UTC 8656 INFO  Done cleanup thread - model_source_service.cc:73

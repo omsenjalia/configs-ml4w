@@ -1,0 +1,26 @@
+{
+  "notify": true,
+  "run_mode": "gpu",
+  "nvidia_driver": {
+    "exist": true,
+    "version": "565.77"
+  },
+  "cuda": {
+    "exist": true,
+    "version": "12"
+  },
+  "gpus": [
+    {
+      "id": "0",
+      "vram": "6144",
+      "name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "arch": "ampere"
+    }
+  ],
+  "gpu_highest_vram": "0",
+  "gpus_in_use": [
+    "0"
+  ],
+  "is_initial": false,
+  "vulkan": false
+}

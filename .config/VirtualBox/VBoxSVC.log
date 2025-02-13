@@ -1,0 +1,108 @@
+00:00:00.000290 main     VirtualBox XPCOM Server 7.1.6 r167084 linux.amd64 (Jan 27 2025 07:52:25) release log
+00:00:00.000293 main     Log opened 2025-01-27T15:47:38.232225000Z
+00:00:00.000294 main     Build Type: release
+00:00:00.000296 main     OS Product: Linux
+00:00:00.000297 main     OS Release: 6.12.10-zen1-1-zen
+00:00:00.000298 main     OS Version: #1 ZEN SMP PREEMPT_DYNAMIC Sat, 18 Jan 2025 02:26:52 +0000
+00:00:00.000330 main     DMI Product Name: 83JC
+00:00:00.000343 main     DMI Product Version: LOQ 15ARP9
+00:00:00.000351 main     Firmware type: UEFI
+00:00:00.000518 main     Secure Boot: Disabled
+00:00:00.000571 main     Host RAM: 23713MB (23.1GB) total, 21769MB (21.2GB) available
+00:00:00.000574 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000574 main     Process ID: 22191
+00:00:00.000575 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.002437 main     IPC socket path: /tmp/.vbox-om-ipc/ipcd
+00:00:00.010948 DCon01   VirtualBox: object creation starts
+00:00:00.011058 DCon01   Home directory: '/home/om/.config/VirtualBox'
+00:00:00.025056 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlo1: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.026684 DCon01   HostDnsMonitor: initializing
+00:00:00.027094 DCon01   NAT: resolv.conf: nameserver 192.168.0.192
+00:00:00.027112 DCon01   NAT: resolv.conf: nameserver 8.8.8.8
+00:00:00.027122 DCon01   NAT: resolv.conf: nameserver 2405:201:202e:39b3::c0a8:1d01
+00:00:00.027136 DCon01   HostDnsMonitor: updating information
+00:00:00.027152 DCon01   HostDnsMonitor: old information
+00:00:00.027159 DCon01     no server entries
+00:00:00.027165 DCon01     no domain set
+00:00:00.027171 DCon01     no search string entries
+00:00:00.027177 DCon01   HostDnsMonitor: new information
+00:00:00.027183 DCon01     server 1: 192.168.0.192
+00:00:00.027189 DCon01     server 2: 8.8.8.8
+00:00:00.027195 DCon01     server 3: 2405:201:202e:39b3::c0a8:1d01
+00:00:00.027201 DCon01     domain: www.tendawifi.com
+00:00:00.027207 DCon01     search string 1: www.tendawifi.com
+00:00:00.029441 DCon01   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.029638 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.033237 DCon01   OCI: Local config file '/home/om/.config/VirtualBox/oci_config' does not exist
+00:00:00.033276 DCon01   OCI: Original config file '/home/om/.oci/config' does not exist
+00:00:00.033285 DCon01   OCI: Reading profiles finished with status NS_OK
+00:00:00.033295 DCon01   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.033336 DCon01   VirtualBox: object created
+00:00:00.815574 DCon04   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.823352 DCon04   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:00:00.855956 DCon04   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.861011 DCon04   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:00:00.896798 DCon04   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=false aResultDetail=0
+00:00:01.223700 DCon04   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.231621 DCon04   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:01:06.916896 DCon05   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:06.921568 DCon05   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:01:06.923994 DCon06   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:01:06.927769 DCon06   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.546309 createBase Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.554532 createBase Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.567791 DCon09   Platform architecture set to 'x86'
+00:03:43.567957 DCon09   Platform architecture set to 'x86'
+00:03:43.567973 DCon09   Platform architecture set to 'x86'
+00:03:43.568357 DCon09   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:03:43.568394 DCon09   Platform architecture set to 'x86'
+00:03:43.569596 DCon09   Saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox" with version "1.19-linux"
+00:03:43.583800 DCon09   Finished saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox"
+00:03:43.583968 DCon09   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.588094 DCon09   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.589681 DCon10   Platform architecture set to 'x86'
+00:03:43.591486 DCon08   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.595240 DCon08   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.597046 DCon10   Saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox" with version "1.19-linux"
+00:03:43.600938 DCon10   Finished saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox"
+00:03:43.604538 DCon09   UnattendedInstaller::initInstaller: UnattendedInstaller::savePassedData(): 
+00:03:43.608237 DCon09   Platform architecture set to 'x86'
+00:03:43.608391 DCon09   Unattended::i_reconfigureFloppy: Machine::addStorageController(Floppy) -> NS_OK 
+00:03:43.608822 DCon09   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.612572 DCon09   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.626035 DCon09   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.630020 DCon09   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:43.630177 DCon09   Saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox" with version "1.19-linux"
+00:03:43.633844 DCon09   Finished saving settings file "/home/om/VirtualBox VMs/Windows 10/Windows 10.vbox"
+00:03:43.637575 DCon09   Launched VM: 2282007520 pid: 22380 (0x576c) frontend: GUI/Qt name: Windows 10
+00:03:43.669822 DCon08   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:03:43.674162 DCon08   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:03:44.064275 DCon11   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:03:44.118007 DCon11   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:03:44.120046 DCon11   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:03:44.137916 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The virtual machine 'Windows 10' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:03:44.336885 DCon09   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:03:44.338331 DCon09   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:03:44.347133 DCon09   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:03:44.438631 DCon09   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:03:44.440542 DCon09   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:04:39.812335 DCon08   Launched VM: 3379348480 pid: 22552 (0x5818) frontend: GUI/Qt name: Windows 10
+00:04:39.902558 DCon10   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:04:39.904507 DCon10   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:04:39.929998 DCon10   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:40.005295 DCon10   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:04:40.007110 DCon10   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:04:40.313167 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The virtual machine 'Windows 10' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:04:40.389127 DCon10   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:04:40.390853 DCon10   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:04:40.413946 DCon10   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:40.484931 DCon10   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:04:40.487241 DCon10   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={d5dcece0-b202-4416-a138-03502784cc07} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:07:40.805012 DCon13   Saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:07:40.813564 DCon13   Finished saving settings file "/home/om/.config/VirtualBox/VirtualBox.xml"
+00:07:50.342498 main     VirtualBox: object deletion starts
+00:07:50.342568 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/home/om/VirtualBox VMs/Windows 10/Windows 10.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:07:50.343350 main     HostDnsMonitor: shutting down ...
+00:07:50.347097 main     HostDnsMonitor: shut down
+00:07:50.358297 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:07:50.358482 main     VirtualBox: object deleted

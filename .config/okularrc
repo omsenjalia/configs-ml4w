@@ -1,0 +1,13 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Snapinst.app_472405942_1136223718090465_5009538795564161589_n_1080.jpg
+Name1[$e]=Snapinst.app_472405942_1136223718090465_5009538795564161589_n_1080.jpg

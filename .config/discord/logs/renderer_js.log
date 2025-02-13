@@ -1,0 +1,27 @@
+[2025-01-29 04:11:18.763] [info]  DiscordSplash.signalReady
+[2025-01-29 04:11:18.772] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":1,"total":6}
+[2025-01-29 04:11:18.773] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":1,"total":6}
+[2025-01-29 04:11:18.787] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":2,"total":6}
+[2025-01-29 04:11:18.787] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":2,"total":6}
+[2025-01-29 04:11:18.790] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":3,"total":6}
+[2025-01-29 04:11:18.790] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":3,"total":6}
+[2025-01-29 04:11:18.791] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":4,"total":6}
+[2025-01-29 04:11:18.791] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":4,"total":6}
+[2025-01-29 04:11:18.791] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":5,"total":6}
+[2025-01-29 04:11:18.792] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":5,"total":6}
+[2025-01-29 04:11:18.798] [info]  DiscordSplash.onStateUpdate: {"status":"installing-updates","current":6,"total":6}
+[2025-01-29 04:11:18.799] [info]  Splash.onStateUpdate: {"status":"installing-updates","current":6,"total":6}
+[2025-01-29 04:11:18.799] [info]  DiscordSplash.onStateUpdate: {"status":"checking-for-updates","current":6,"total":6}
+[2025-01-29 04:11:18.800] [info]  Splash.onStateUpdate: {"status":"checking-for-updates","current":6,"total":6}
+[2025-01-29 04:11:19.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:20.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:21.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:22.082] [info]  DiscordSplash.onStateUpdate: {"status":"update-manually","current":6,"total":6,"newVersion":"0.0.82"}
+[2025-01-29 04:11:22.083] [info]  Splash.onStateUpdate: {"status":"update-manually","current":6,"total":6,"newVersion":"0.0.82"}
+[2025-01-29 04:11:22.764] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:23.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:24.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:25.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:26.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:27.763] [info]  Splash.updateCountdownSeconds: undefined
+[2025-01-29 04:11:28.763] [info]  Splash.updateCountdownSeconds: undefined
