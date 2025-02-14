@@ -33,5 +33,5 @@ eval "$(pyenv init - bash)"
 
 
 # Autosync
-rsync -avu --delete "/home/om/.config" "/home/om/configs-ml4w/"
-rsync -avu --delete "/home/om/.bashrc_custom" "/home/om/configs-ml4w"
+rsync -au --delete "/home/om/.config" "/home/om/configs-ml4w/"
+rsync -au --delete "/home/om/.bashrc_custom" "/home/om/configs-ml4w"
