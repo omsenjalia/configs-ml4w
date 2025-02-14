@@ -1,3 +1,4 @@
+cd ~/configs-ml4w
 source .bashrc_custom
 git add .
 git commit -m "Update $DATE"
