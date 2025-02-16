@@ -4,28 +4,29 @@
     "telemetry.devDeviceId": "4bd91a3c-313e-457e-bdf5-6d2be2c2c5ea",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1738978406574"
+                "folderUri": "file:///home/om/docker-compose"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "profileAssociations": {
-        "workspaces": {},
-        "emptyWindows": {
-            "1738978406574": "__default__profile__"
-        }
+        "workspaces": {
+            "file:///home/om/docker-compose": "__default__profile__"
+        },
+        "emptyWindows": {}
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/om/.config/VSCodium/Backups/1738978406574",
+            "folder": "file:///home/om/docker-compose",
+            "backupPath": "/home/om/.config/VSCodium/Backups/cab988c6f5681717657d22fb286fd746",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
                 "width": 480,
-                "height": 473
+                "height": 952
             }
         },
         "openedWindows": []
@@ -54,7 +55,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 170,
             "auxiliarySideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
@@ -112,6 +113,20 @@
                                     "id": "workbench.action.reopenClosedEditor",
                                     "label": "&&Reopen Closed Editor",
                                     "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/om/docker-compose",
+                                        "path": "/home/om/docker-compose",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/docker-compose"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -312,6 +327,10 @@
                         "label": "&&Close Editor"
                     },
                     {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
+                    },
+                    {
                         "id": "workbench.action.closeWindow",
                         "label": "Clos&&e Window"
                     },
@@ -505,7 +524,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -844,8 +864,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1366,6 +1385,11 @@
             "workbench.action.closeActiveEditor": {
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
+            },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
