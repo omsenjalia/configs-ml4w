@@ -67,7 +67,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1696,7 +1697,7 @@
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 960,
+                "width": 480,
                 "height": 952
             }
         },

@@ -3,7 +3,7 @@
 		"windowBounds": {
 			"x": 973,
 			"y": 71,
-			"width": 930,
+			"width": 454,
 			"height": 918
 		},
 		"displayBounds": {
@@ -12,7 +12,7 @@
 			"width": 1920,
 			"height": 1080
 		},
-		"isFullScreen": false,
+		"isFullScreen": true,
 		"isMaximized": false
 	}
 }
