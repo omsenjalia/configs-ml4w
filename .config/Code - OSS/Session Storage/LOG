@@ -1,2 +1,3 @@
-2025/02/16-16:53:44.002 56ba Creating DB /home/om/.config/Code - OSS/Session Storage since it was missing.
-2025/02/16-16:53:44.008 56ba Reusing MANIFEST /home/om/.config/Code - OSS/Session Storage/MANIFEST-000001
+2025/02/19-16:15:40.119 1cb8 Reusing MANIFEST /home/om/.config/Code - OSS/Session Storage/MANIFEST-000001
+2025/02/19-16:15:40.120 1cb8 Recovering log #3
+2025/02/19-16:15:40.120 1cb8 Reusing old log /home/om/.config/Code - OSS/Session Storage/000003.log 

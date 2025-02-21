@@ -67,11 +67,21 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/om/Downloads/hyprpanel.json",
+                                        "path": "/home/om/Downloads/hyprpanel.json",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/hyprpanel.json"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -1697,7 +1707,7 @@
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 480,
+                "width": 960,
                 "height": 952
             }
         },

@@ -1,3 +1,15 @@
 {
-	"notifications": []
+	"notifications": [
+		{
+			"guid": "be9383b8-4712-4e0b-89a2-188db530ced2",
+			"timestamp": 1739960049042,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Can't connect to the container \"0cdd2533e4679af362ec708c0301f519ae88acb2a38b664806f73864b95df401\", because the container is not running",
+				"icon": "error",
+				"type": "error"
+			}
+		}
+	]
 }

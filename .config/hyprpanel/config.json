@@ -36,20 +36,20 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle",
-        "battery",
+        "clock",
         "weather",
         "ram",
         "cpu",
-        "cputemp",
-        "hypridle"
+        "cputemp"
       ],
       "middle": [
-        "clock"
+        "power",
+        "windowtitle",
+        "systray"
       ],
       "right": [
+        "hypridle",
         "storage",
-        "netstat",
         "volume",
         "network",
         "bluetooth",
@@ -181,7 +181,7 @@
   "wallpaper.pywal": true,
   "menus.dashboard.stats.interval": 3000,
   "menus.dashboard.stats.enable_gpu": true,
-  "tear": false,
+  "tear": true,
   "menus.clock.time.hideSeconds": true,
   "theme.bar.buttons.modules.cpu.enableBorder": false,
   "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
@@ -200,5 +200,32 @@
   "bar.customModules.netstat.rateUnit": "KiB",
   "bar.customModules.updates.autoHide": true,
   "bar.customModules.cpuTemp.sensor": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon5/temp1_input",
-  "menus.clock.weather.enabled": true
+  "menus.clock.weather.enabled": true,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "theme.bar.buttons.modules.submap.enableBorder": false,
+  "theme.bar.buttons.modules.hypridle.enableBorder": false,
+  "bar.customModules.hypridle.label": true,
+  "bar.customModules.cava.showActiveOnly": false,
+  "bar.customModules.cava.barCharacters": [
+    "▁",
+    "▂",
+    "▃",
+    "▄",
+    "▅",
+    "▆",
+    "▇",
+    "█"
+  ],
+  "theme.bar.buttons.modules.cava.enableBorder": false,
+  "bar.customModules.cava.stereo": false,
+  "theme.bar.background": "#11111b",
+  "theme.bar.buttons.style": "default",
+  "theme.bar.buttons.icon_background": "#242438",
+  "menus.media.noMediaText": "No Media Currently Playing",
+  "bar.systray.customIcons": {
+    "steam": {
+      "icon": "󰓓",
+      "color": "#89b4fa"
+    }
+  }
 }

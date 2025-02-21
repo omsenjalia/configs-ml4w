@@ -1,2 +1,3 @@
-2025/02/16-16:39:01.923 3911 Creating DB /home/om/.config/Docker Desktop/Partitions/pgmystery_docker-extension-vnc/Local Storage/leveldb since it was missing.
-2025/02/16-16:39:01.958 3911 Reusing MANIFEST /home/om/.config/Docker Desktop/Partitions/pgmystery_docker-extension-vnc/Local Storage/leveldb/MANIFEST-000001
+2025/02/19-15:43:57.949 1ff8 Reusing MANIFEST /home/om/.config/Docker Desktop/Partitions/pgmystery_docker-extension-vnc/Local Storage/leveldb/MANIFEST-000001
+2025/02/19-15:43:57.949 1ff8 Recovering log #3
+2025/02/19-15:43:57.949 1ff8 Reusing old log /home/om/.config/Docker Desktop/Partitions/pgmystery_docker-extension-vnc/Local Storage/leveldb/000003.log 
