@@ -1,1 +1,87 @@
-systemctl start vmware-networks
+#!/bin/bash
+# ==============================================================================
+# VMware Network Service Manager
+# ==============================================================================
+
+# Function to start VMware networks
+start_vmware() {
+    echo "Starting VMware network services..."
+    if systemctl start vmware-networks; then
+        echo "VMware networks started successfully"
+        systemctl status vmware-networks --no-pager
+    else
+        echo "Failed to start VMware networks"
+        exit 1
+    fi
+}
+
+# Function to stop VMware networks  
+stop_vmware() {
+    echo "Stopping VMware network services..."
+    if systemctl stop vmware-networks; then
+        echo "VMware networks stopped successfully"
+    else
+        echo "Failed to stop VMware networks"
+        exit 1
+    fi
+}
+
+# Function to restart VMware networks
+restart_vmware() {
+    echo "Restarting VMware network services..."
+    if systemctl restart vmware-networks; then
+        echo "VMware networks restarted successfully"
+        systemctl status vmware-networks --no-pager
+    else
+        echo "Failed to restart VMware networks"
+        exit 1
+    fi
+}
+
+# Function to check VMware networks status
+status_vmware() {
+    echo "VMware network services status:"
+    systemctl status vmware-networks --no-pager
+}
+
+# Display usage
+usage() {
+    cat << EOF
+Usage: $(basename "$0") [COMMAND]
+
+VMware network service management script
+
+Commands:
+    start      Start VMware network services
+    stop       Stop VMware network services  
+    restart    Restart VMware network services
+    status     Show VMware network services status
+    help       Show this help message
+
+If no command is provided, starts the VMware networks (default behavior).
+EOF
+}
+
+# Main logic
+case "${1:-start}" in
+    start)
+        start_vmware
+        ;;
+    stop)
+        stop_vmware
+        ;;
+    restart)
+        restart_vmware
+        ;;
+    status)
+        status_vmware
+        ;;
+    help|--help|-h)
+        usage
+        ;;
+    *)
+        echo "Unknown command: $1"
+        usage
+        exit 1
+        ;;
+esac

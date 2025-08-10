@@ -1,3 +1,79 @@
+# ==============================================================================
+# ML4W Dotfiles .gitignore
+# ==============================================================================
+
+# Application-specific exclusions
 .config/Jan/*
 .config/vesktop/*
 
+# Cache and temporary files
+.config/*/cache/*
+.config/*/Cache/*
+.config/*/logs/*
+.config/*/tmp/*
+**/cache/
+**/Cache/
+**/tmp/
+**/temp/
+**/.tmp/
+
+# User data and session files
+.config/*/sessions/*
+.config/*/user-dirs.dirs
+.config/*/recently-used.xbel
+.config/*/bookmarks
+.config/*/history
+
+# Build artifacts and dependencies
+**/node_modules/
+**/dist/
+**/build/
+**/.next/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.egg-info/
+
+# IDE and editor files
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+**/*~
+**/.DS_Store
+**/Thumbs.db
+
+# Application data that shouldn't be synced
+.config/discord/*
+.config/Slack/*
+.config/spotify/*
+.config/teams/*
+.config/zoom/*
+
+# Browser data
+.config/firefox/*
+.config/chromium/*
+.config/google-chrome/*
+
+# Virtual machine and container data
+.config/docker/*
+.config/VirtualBox/*
+.config/VMware/*
+
+# Graphics and media cache
+.config/*/thumbnails/*
+.config/*/gpu-cache/*
+
+# Logs
+**/*.log
+**/logs/
+
+# Temporary backup files
+**/*.bak
+**/*.backup
+**/*~
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+**/.directory
