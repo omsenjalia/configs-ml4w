@@ -1,5 +1,50 @@
-cd ~/configs-ml4w
-source .bashrc_custom
+#!/bin/bash
+# ==============================================================================
+# Dotfiles Updater Script
+# ==============================================================================
+
+set -e  # Exit on error
+
+# Configuration
+DOTFILES_REPO="${DOTFILES_REPO:-$HOME/configs-ml4w}"
+DATE=$(date +"%Y-%m-%d %H:%M:%S")
+
+# Check if we're in a git repository
+if [[ ! -d "$DOTFILES_REPO/.git" ]]; then
+    echo "Error: $DOTFILES_REPO is not a git repository"
+    exit 1
+fi
+
+# Navigate to dotfiles directory
+cd "$DOTFILES_REPO"
+
+echo "Updating dotfiles repository..."
+
+# Source bashrc_custom if it exists
+if [[ -f ".bashrc_custom" ]]; then
+    echo "Sourcing .bashrc_custom..."
+    source .bashrc_custom
+fi
+
+# Check for changes
+if git diff --quiet && git diff --cached --quiet; then
+    echo "No changes to commit."
+    exit 0
+fi
+
+# Add all changes
 git add .
-git commit -m "Update $DATE"
-git push
+
+# Create commit with timestamp
+COMMIT_MESSAGE="Update dotfiles - $DATE"
+git commit -m "$COMMIT_MESSAGE"
+
+echo "Committed changes: $COMMIT_MESSAGE"
+
+# Push changes
+if git push; then
+    echo "Successfully pushed changes to remote repository"
+else
+    echo "Warning: Failed to push changes to remote repository"
+    exit 1
+fi

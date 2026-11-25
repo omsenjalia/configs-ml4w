@@ -1,38 +1,50 @@
+# ==============================================================================
+# Custom Bash Configuration
+# ==============================================================================
+
+# Basic aliases
 alias ..="cd .."
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
 
-# Load pyenv automatically by appending
-# the following to 
-# ~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
-# and ~/.bashrc (for interactive shells) :
+# ==============================================================================
+# Python Environment (pyenv) Configuration
+# ==============================================================================
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
-# find-the-command
-source /usr/share/doc/find-the-command/ftc.bash
-# Restart your shell for the changes to take effect.
+# Check if pyenv is installed and configure it
+if [[ -d "$HOME/.pyenv" ]]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    
+    # Initialize pyenv
+    eval "$(pyenv init -)"
+    
+    # Initialize pyenv-virtualenv if available
+    if command -v pyenv virtualenv-init > /dev/null; then
+        eval "$(pyenv virtualenv-init -)"
+    fi
+else
+    echo "Warning: pyenv not found in $HOME/.pyenv"
+fi
 
-# Load pyenv-virtualenv automatically by adding
-# the following to ~/.bashrc:
+# ==============================================================================
+# Additional Tools
+# ==============================================================================
 
-eval "$(pyenv virtualenv-init -)"
+# find-the-command integration
+if [[ -f "/usr/share/doc/find-the-command/ftc.bash" ]]; then
+    source /usr/share/doc/find-the-command/ftc.bash
+fi
 
-# Load pyenv automatically by appending
-# the following to 
-# ~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
-# and ~/.bashrc (for interactive shells) :
+# ==============================================================================
+# Auto-sync Configuration (if running as intended user)
+# ==============================================================================
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+# Use environment variables for paths to make it portable
+DOTFILES_USER="${DOTFILES_USER:-$USER}"
+DOTFILES_HOME="${DOTFILES_HOME:-$HOME}"
+DOTFILES_REPO="${DOTFILES_REPO:-$HOME/configs-ml4w}"
 
-# Restart your shell for the changes to take effect.
-
-
-# Autosync
-rsync -au --delete "/home/om/.config" "/home/om/configs-ml4w/"
-rsync -au --delete "/home/om/.bashrc_custom" "/home/om/configs-ml4w"
+# Only run autosync if we're the intended user and paths exist
+if [[ -d "$DOTFILES_REPO" && -d "$DOTFILES_HOME/.config" ]]; then
+    rsync -au --delete "$DOTFILES_HOME/.config" "$DOTFILES_REPO/"
+    rsync -au --delete "$DOTFILES_HOME/.bashrc_custom" "$DOTFILES_REPO/"
+fi

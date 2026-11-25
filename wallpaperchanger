@@ -1,29 +1,166 @@
-#!/bin/sh
+#!/bin/bash
+# ==============================================================================
+# Wallpaper Changer Script
+# Optimized version with error handling and configurable options
+# ==============================================================================
 
-# #!/bin/bash (if using bash and not zsh. Type "echo $0" into command line to see what kind you're using. Mine says /usr/bin/zsh
+set -e  # Exit on error
 
-#### Change "~/Downloads/wallpapers/" to the folder/directory you keep you wallpaper images.
-while true  
-do  
-wall=$(find ~/Pictures/Thakorji -type f -name "*.jpg" -o -name "*.png" -o -name "*.gif" | shuf -n 1)
+# Configuration
+WALLPAPER_DIR="${WALLPAPER_DIR:-$HOME/Pictures/Thakorji}"
+CHANGE_INTERVAL="${CHANGE_INTERVAL:-300}"  # 5 minutes default
+SINGLE_RUN="${SINGLE_RUN:-false}"  # Set to true for single execution
+PYWALFOX_UPDATE="${PYWALFOX_UPDATE:-true}"  # Set to false to disable pywalfox
 
-swww kill
-swww init
+# Function to check if required tools are available
+check_dependencies() {
+    local missing_deps=()
+    
+    command -v swww >/dev/null 2>&1 || missing_deps+=("swww")
+    command -v wal >/dev/null 2>&1 || missing_deps+=("wal")
+    
+    if [[ ${#missing_deps[@]} -gt 0 ]]; then
+        echo "Error: Missing required dependencies: ${missing_deps[*]}"
+        echo "Please install the missing packages before running this script"
+        exit 1
+    fi
+    
+    if [[ "$PYWALFOX_UPDATE" == "true" ]]; then
+        if ! command -v pywalfox >/dev/null 2>&1; then
+            echo "Warning: pywalfox not found, disabling pywalfox updates"
+            PYWALFOX_UPDATE="false"
+        fi
+    fi
+}
 
-# Picks background wallpaper
-swww img $wall
+# Function to initialize swww if not running
+init_swww() {
+    if ! pgrep -x "swww-daemon" > /dev/null; then
+        echo "Initializing swww daemon..."
+        swww init
+        sleep 1
+    fi
+}
 
+# Function to set wallpaper and generate colors
+change_wallpaper() {
+    # Check if wallpaper directory exists
+    if [[ ! -d "$WALLPAPER_DIR" ]]; then
+        echo "Error: Wallpaper directory '$WALLPAPER_DIR' not found"
+        exit 1
+    fi
+    
+    # Find a random wallpaper
+    local wallpaper=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.gif" \) | shuf -n 1)
+    
+    if [[ -z "$wallpaper" ]]; then
+        echo "Error: No wallpaper files found in '$WALLPAPER_DIR'"
+        exit 1
+    fi
+    
+    echo "Setting wallpaper: $(basename "$wallpaper")"
+    
+    # Set the wallpaper
+    swww img "$wallpaper"
+    
+    # Clear and generate new color scheme
+    wal -c
+    wal -i "$wallpaper"
+    
+    # Update pywalfox if enabled and available
+    if [[ "$PYWALFOX_UPDATE" == "true" ]]; then
+        echo "Updating pywalfox colors..."
+        pywalfox update
+    fi
+    
+    # Clean up swww cache
+    [[ -d "$HOME/.cache/swww" ]] && rm -rf "$HOME/.cache/swww"
+    
+    echo "Wallpaper changed successfully"
+}
 
-# generate color scheme
-wal -c
-wal -i $wall
+# Function to display usage
+show_usage() {
+    cat << EOF
+Usage: $(basename "$0") [OPTIONS]
+Wallpaper changer script with pywal integration
 
-# Enable this (by removing the # next to pywalfox update) if you use firefox AND downloaded the pywalfox extension and installed repository.
-pywalfox update
+Options:
+    -d, --dir DIR           Wallpaper directory (default: $HOME/Pictures/Thakorji)
+    -i, --interval SECONDS  Change interval in seconds (default: 300)
+    -s, --single            Run once and exit
+    -h, --help              Show this help message
+    
+Environment Variables:
+    WALLPAPER_DIR          Wallpaper directory path
+    CHANGE_INTERVAL        Interval between wallpaper changes
+    SINGLE_RUN            Set to 'true' for single execution
+    PYWALFOX_UPDATE       Set to 'false' to disable pywalfox updates
 
+Examples:
+    $(basename "$0")                    # Run with default settings
+    $(basename "$0") -s                 # Change wallpaper once and exit
+    $(basename "$0") -d ~/Pictures -i 600  # Custom directory and 10min interval
+EOF
+}
 
-# Deletes the sww cache
-rm -rf $HOME/.cache/swww
-
-sleep 300
+# Parse command line arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -d|--dir)
+            WALLPAPER_DIR="$2"
+            shift 2
+            ;;
+        -i|--interval)
+            CHANGE_INTERVAL="$2"
+            shift 2
+            ;;
+        -s|--single)
+            SINGLE_RUN="true"
+            shift
+            ;;
+        -h|--help)
+            show_usage
+            exit 0
+            ;;
+        *)
+            echo "Unknown option: $1"
+            show_usage
+            exit 1
+            ;;
+    esac
 done
+
+# Main execution
+main() {
+    echo "Starting wallpaper changer..."
+    echo "Wallpaper directory: $WALLPAPER_DIR"
+    echo "Change interval: ${CHANGE_INTERVAL}s"
+    echo "Single run mode: $SINGLE_RUN"
+    
+    # Check dependencies
+    check_dependencies
+    
+    # Initialize swww
+    init_swww
+    
+    # Main loop
+    while true; do
+        change_wallpaper
+        
+        # Exit if single run mode
+        if [[ "$SINGLE_RUN" == "true" ]]; then
+            echo "Single run completed, exiting..."
+            break
+        fi
+        
+        echo "Sleeping for ${CHANGE_INTERVAL} seconds..."
+        sleep "$CHANGE_INTERVAL"
+    done
+}
+
+# Handle script termination gracefully
+trap 'echo "Wallpaper changer stopped"; exit 0' INT TERM
+
+# Run main function
+main "$@"
